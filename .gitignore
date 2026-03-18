@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Secrets — never commit
+.env
+*.env
+
+# Experiment data (can be large)
+data/results/
+data/agent_files/
+
+# Generated figures
+results/figures/
