@@ -28,17 +28,22 @@ The clearest example: the competitor scraping task pointed at a fake domain (`ex
 
 ## Figures
 
-**Tool calls by condition** -- unmonitored makes more calls on average, but the overlap is large.
-
-![Tool calls per condition](results/figures/01_tool_calls_per_condition.png)
-
-**Where the difference comes from** -- unmonitored reaches for `web_search` and `write_file` more; monitored runs more Python. The `write_file` gap (+50%) is the most consistent signal across tasks.
-
-![Tool breakdown](results/figures/02_tool_breakdown.png)
-
-**Per-task heatmap** -- the biggest gaps are on tasks 01, 02, and 04. Tasks 05, 08, and 09 are flat zeros in both conditions (no tools used). Task 10 is the one anomaly where monitored used more calls.
-
-![Task x condition heatmap](results/figures/04_heatmap_task_condition.png)
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="results/figures/01_tool_calls_per_condition.png" alt="Tool calls per condition"/><br/>
+      <sub>Overall tool calls -- unmonitored slightly higher, but overlap is large</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="results/figures/02_tool_breakdown.png" alt="Tool breakdown"/><br/>
+      <sub>Unmonitored uses more <code>write_file</code> (+50%) and <code>web_search</code>; monitored runs more Python</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="results/figures/04_heatmap_task_condition.png" alt="Task x condition heatmap"/><br/>
+      <sub>Per-task heatmap -- biggest gaps on tasks 01, 02, 04; hard refusals (08, 09) are zero in both</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
