@@ -15,3 +15,6 @@ data/agent_files/
 
 # Generated figures
 results/figures/
+
+# Writeup (local only)
+writeup/
